@@ -90,7 +90,7 @@ Master Docker files, Docker Build, Docker Compose, Multi-Container Apps, and Mul
 14. **Docker Multi-stage Builds**
     - Creating optimized images through multi-stage builds
 
-## [What will students learn in your course?](https://links.stacksimplify.com/docker-in-a-weekend-40-practical-demos-for-devops)
+## [What will You learn in your course?](https://links.stacksimplify.com/docker-in-a-weekend-40-practical-demos-for-devops)
 
 1. You will learn Docker basics with foundational commands and setup.
 2. You will learn to install Docker Desktop and sign up for Docker Hub.
