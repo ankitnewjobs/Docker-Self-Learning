@@ -99,7 +99,7 @@ Master Docker files, Docker Build, Docker Compose, Multi-Container Apps, and Mul
 5. You will learn Dockerfile instructions like `LABELS`, `ADD`, `COPY`, and `ARG`.
 6. You will learn to use Dockerfile for `RUN`, `EXPOSE`, and other key instructions.
 7. You will learn how to manage environment variables and work with `CMD` and `ENTRYPOINT`.
-8. You will learn advanced Dockerfile instructions: `HEALTHCHECK`, `USER`, and optimizing image builds.
+8. You will learn advanced Dockerfile instructions: `healthcheck`, `USER`, and optimizing image builds.
 9. You will understand Docker ports and how to map them using `-p` and `-P` flags.
 10. You will learn Docker Volumes to store persistent data and share data between containers.
 11. You will learn the difference between Docker Volumes and Bind Mounts and when to use each.
@@ -108,12 +108,12 @@ Master Docker files, Docker Build, Docker Compose, Multi-Container Apps, and Mul
 14. You will learn to manage multi-container applications using Docker Compose.
 15. You will learn Docker Compose features like scaling, networks, health checks, and startup orders.
 16. You will master Docker Compose `PROFILES`, `LINKS`, `ALIASES`, and named volumes.
-17. You will learn advanced Docker Compose configurations like `HEALTHCHECKS` and startup conditions.
+17. You will learn advanced Docker Compose configurations like `HEALTH CHECKS` and startup conditions.
 18. You will learn Docker BuildKit for efficient builds and multi-platform support.
 19. You will learn Docker Cloud for remote builds and managing cloud-based images.
 20. You will learn to use multi-stage builds to create lightweight and optimized Docker images. 
 
 ## [Github Repositories used for this course](https://links.stacksimplify.com/docker-in-a-weekend-40-practical-demos-for-devops)
 - [docker-in-a-weekend](https://github.com/stacksimplify/docker-in-a-weekend)
-- **Important Note:** Please go to these repositories and FORK these repositories and make use of them during the course.
+- **Important Note:** Please go to these Original repositories.
 
