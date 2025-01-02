@@ -31,8 +31,12 @@ Run the "Docker Desktop Installer.exe"
 # Create Docker Hub Account
 https://hub.docker.com
 
+![image](https://github.com/user-attachments/assets/569c20c6-4832-45c8-866d-b60cf863ac57)
+
 # Signin Docker Desktop 
 Open Docker Desktop and SignIn to Docker Hub
+
+![image](https://github.com/user-attachments/assets/112750b9-670c-46c1-85dc-a61b2931d100)
 
 # Configure kubectl cli on Windows PATH
 C:\Program Files\Docker\Docker\Resources\bin
