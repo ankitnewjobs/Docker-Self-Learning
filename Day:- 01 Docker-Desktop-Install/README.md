@@ -8,7 +8,8 @@ description: Install Docker Desktop
 
 ## Step-02: Docker Desktop - Pricing, SignUp, Download
 - [Docker Desktop Pricing](https://www.docker.com/pricing/)
-  ![image](https://github.com/user-attachments/assets/3c63b6f3-7b0d-42a7-8e33-bfab679d9a65)
+
+   ![image](https://github.com/user-attachments/assets/3c63b6f3-7b0d-42a7-8e33-bfab679d9a65)
 
 - [SignUp Docker Hub](https://hub.docker.com/)
 - [Download Docker Desktop](https://www.docker.com/products/docker-desktop/)
