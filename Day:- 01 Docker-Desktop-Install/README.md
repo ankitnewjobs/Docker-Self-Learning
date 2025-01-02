@@ -34,7 +34,7 @@ https://hub.docker.com
 ![image](https://github.com/user-attachments/assets/569c20c6-4832-45c8-866d-b60cf863ac57)
 
 # Signin Docker Desktop 
-Open Docker Desktop and SignIn to Docker Hub
+Open Docker Desktop and SignIn into Docker Hub
 
 ![image](https://github.com/user-attachments/assets/2cdfe1dc-6751-473c-924a-59b5ee99000b)
 
