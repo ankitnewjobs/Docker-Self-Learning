@@ -17,20 +17,10 @@ description: Install Docker Desktop
 
 - [Download Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
+![image](https://github.com/user-attachments/assets/ade20943-7abe-4d34-a52a-7da1605bd7d1)
 
 ## Step-03: Install Docker Desktop 
-### Step-03-01: MACOS: Install Docker Desktop 
-```t
-# Install Docker Desktop
-Copy Docker dmg to Applications folder
-
-# Create Docker Hub Account
-https://hub.docker.com
-
-# Signin Docker Desktop 
-Open Docker Desktop and SignIn to Docker Hub
-```
-### Step-03-02: WINDOWS: Install Docker Desktop 
+### WINDOWS: Install Docker Desktop 
 ```t
 # Download Docker Desktop
 https://www.docker.com/products/docker-desktop/
