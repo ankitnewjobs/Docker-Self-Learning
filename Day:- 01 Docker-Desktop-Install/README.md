@@ -36,7 +36,8 @@ https://hub.docker.com
 # Signin Docker Desktop 
 Open Docker Desktop and SignIn to Docker Hub
 
-"C:\Users\Hp\OneDrive\Desktop\12.jpg"
+![image](https://github.com/user-attachments/assets/2cdfe1dc-6751-473c-924a-59b5ee99000b)
+
 
 # Configure kubectl cli on Windows PATH
 C:\Program Files\Docker\Docker\Resources\bin
