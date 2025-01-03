@@ -21,7 +21,7 @@ description: Install Docker Desktop
 
 ## Step-03: Install Docker Desktop 
 ### WINDOWS: Install Docker Desktop 
-```t
+
 # Download Docker Desktop
 https://www.docker.com/products/docker-desktop/
 
