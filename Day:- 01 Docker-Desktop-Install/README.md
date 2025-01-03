@@ -35,8 +35,6 @@ Run the "Docker Desktop Installer.exe"
 # Create Docker Hub Account
 https://hub.docker.com
 
-
-
 # Signin Docker Desktop 
 Open Docker Desktop and SignIn into Docker Hub
 
