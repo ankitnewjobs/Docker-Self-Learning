@@ -25,6 +25,7 @@ description: Install Docker Desktop
 # Download Docker Desktop
 https://www.docker.com/products/docker-desktop/
 
+![image](https://github.com/user-attachments/assets/3a003b74-d3b9-4fbf-ad2e-2f5fd4b791e2)
 
 # Install Docker Desktop on Windows
 Run the "Docker Desktop Installer.exe"
