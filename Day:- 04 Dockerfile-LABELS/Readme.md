@@ -32,7 +32,7 @@ In this guide, you will:
 FROM nginx:alpine-slim
 
 # Custom Labels
-LABEL maintainer="Kalyan Reddy Daida"  
+LABEL maintainer="Ankit Ranjan"  
 LABEL version="1.0"
 LABEL description="A simple Nginx Application"
 # OCI Labels
@@ -291,4 +291,137 @@ You have successfully:
 
 **Happy Dockerizing!**
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Explanation:- 
+
+This guide walks you through creating and managing a Docker image using `nginx:alpine-slim` as the base, adding metadata using labels, and working with containers. 
+
+Below is an in-depth explanation:-
+
+### 1. Introduction
+
+The primary goal is to:
+
+- Build an optimized Nginx Docker image.
+- Incorporate metadata using Docker labels and OCI labels.
+- Use tools like docker inspect and jq to inspect and parse JSON outputs from Docker commands.
+
+### 2. Step 1: Create a Dockerfile and Customize index.html
+
+- Base Image: The nginx:alpine-slim image is lightweight, making it ideal for resource-constrained environments.
+  
+#### Dockerfile Explained
+
+dockerfile
+FROM nginx:alpine-slim
+
+- Specifies the base image as nginx:alpine-slim.
+
+dockerfile
+LABEL maintainer="Kalyan Reddy Daida"  
+LABEL version="1.0"
+LABEL description="A simple Nginx Application"
+
+- Adds custom labels for basic metadata, such as the maintainer, version, and description of the image.
+
+dockerfile
+
+# OCI-compliant labels (standardized format)
+
+LABEL org.opencontainers.image.authors="Ankit Ranjan"
+LABEL org.opencontainers.image.title="Nginx Alpine Slim Application"
+
+- OCI labels follow open standards for interoperability.
+
+dockerfile
+COPY index.html /usr/share/nginx/html
+
+- Copies the index.html file into the Nginx HTML directory, customizing the default page served by the container.
+
+#### index.html
+
+This file defines a simple web page with customized styles and messages to reflect the project details.
+
+### 3. Step 2: Build and Run the Docker Image
+
+- Building the Image:
+  
+  docker build -t demo4-dockerfile-labels:v1 .
+  
+  - The -t flag tags the image with a name (demo4-docker file-labels) and version (v1).
+  
+- Running the Container:
+  
+  docker run --name mylabels-demo -p 8080:80 -d demo4-dockerfile-labels:v1
+  
+  - Runs the container, mapping port 8080 on the host to port 80 inside the container.
+  - You can access the application via http://localhost:8080.
+
+### 4. Step 3: Install jq
+
+- Why jq?
+
+   - jq is a command-line tool for parsing and formatting JSON data.
+  - It's particularly helpful when inspecting Docker objects (e.g., images and containers).
+
+- Installation:
+
+  - The guide provides OS-specific instructions for installing jq via package managers (e.g., brew, apt, choco) or manual downloads.
+
+### 5. Step 4: Inspect Docker Images
+
+- Inspecting an Image:
+  
+  docker image inspect demo4-dockerfile-labels:v1
+  
+  - Returns detailed metadata about the image, including labels, creation time, and base layers.
+
+- Extracting Specific Data:
+
+   - Get the creation date:
+  
+    docker inspect --format={{.Created}} demo4-dockerfile-labels:v1
+    
+  - Get labels as formatted JSON:
+    
+    docker inspect --format='{{json .Config.Labels}}' demo4-dockerfile-labels:v1 | jq
+    
+### 6. Step 5: Inspect Docker Containers
+
+- Inspecting a Container:
+  
+  docker inspect mylabels-demo
+  
+  - Returns metadata about the running container, such as IP address, status, and ports.
+
+- Common Queries:
+
+  - Get container IP:
+    
+    docker inspect --format={{.NetworkSettings.IPAddress}} mylabels-demo
+    
+  - Inspect exposed ports:
+    
+    docker inspect --format={{json .Config.ExposedPorts}} mylabels-demo | jq
+    
+### 7. Step 6: Cleanup
+
+- Stop and Remove Container:
+  
+  docker rm -f mylabels-demo
+  
+- Remove Docker Image:
+  
+  docker rmi demo4-dockerfile-labels:v1
+  
+  - Ensures a clean environment by removing unused resources.
+
+### 8. Conclusion
+
+By following the guide, you learn to:
+
+- Build a lightweight and customized Nginx Docker image with descriptive labels.
+- Inspect and manage Docker images and containers using tools like docker inspect and jq.
+- Understand best practices, such as tagging images and adding metadata with labels.
+  
